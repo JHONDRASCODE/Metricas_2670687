@@ -1,0 +1,60 @@
+
+
+body {
+    text-align: center;
+    
+}
+h1,h2{
+    color: rgb(60, 142, 250);
+}
+.column {
+    flex: 1 1 100%;
+}
+
+@media screen and (min-width: 600px) {
+.column {
+        flex: 1 1 50%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+.column {
+        flex: 1 1 33.33%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: x-large;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+nav {
+    background-color: rgb(60, 142, 250);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+nav a {
+    margin-right: 10px;
+}
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color:rgb(60, 142, 250);
+    padding: 10px;
+    text-align: center;
+}
+
+img{
+    width: 550px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
