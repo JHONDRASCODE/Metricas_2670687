@@ -1,27 +1,74 @@
+body { 
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    background-color: #f4f4f4; 
+}
 
-
-body {
+header {  
+    padding: 20px;
     text-align: center;
-    
 }
-h1,h2{
-    color: rgb(60, 142, 250);
+header h1 {
+     color: #0066ff;
 }
+h2{
+    color: #0066ff;
+}
+nav {
+    display: flex; 
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #eee; 
+}
+
+.separator {
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    margin: 0 10px;
+}
+
+
+main {
+     padding: 20px;
+}
+
+main h2 {
+     margin-top: 0;
+}
+
+figure {
+        margin: 20px 0;
+}
+
+figure img {
+     width: 100%;
+      border-radius: 5px; 
+}
+
+figure figcaption {
+     font-size: 0.8em; 
+     color: #666; 
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+     margin: 0; 
+}
+
 .column {
     flex: 1 1 100%;
 }
 
-@media screen and (min-width: 600px) {
-.column {
-        flex: 1 1 50%;
-    }
-}
+@media screen and (min-width: 600px) { .column { flex: 1 1 50%; } }
 
-@media screen and (min-width: 900px) {
-.column {
-        flex: 1 1 33.33%;
-    }
-}
+@media screen and (min-width: 900px) { .column { flex: 1 1 33.33%; } }
 
 a {
     text-decoration: none;
@@ -29,32 +76,38 @@ a {
     font-size: x-large;
 }
 
-a:hover {
-    color: #ff0000;
+.animated-link {
+    transition: transform 0.4s ease; /* Transición suave al cambiar la propiedad transform */
 }
 
-nav {
+.animated-link:active {
+    transform: translateY(2px); /* Mueve el enlace 1px hacia abajo al hacer clic */
+}
+
+a:hover {
+     color: #ff0000; 
+}
+
+nav { 
     background-color: rgb(60, 142, 250);
     padding: 10px;
     border-radius: 20px;
 }
 
-nav a {
-    margin-right: 10px;
-}
-main {
-    padding: 20px;
-}
+nav a { margin-right: 10px; }
 
-footer {
+main { padding: 20px; }
+
+footer { 
     background-color:rgb(60, 142, 250);
     padding: 10px;
-    text-align: center;
+    text-align: center; 
 }
 
-img{
+img {
     width: 550px;
     display: block;
     margin: auto;
-    border-radius: 20px;
+    border-radius: 50%;
+    border: 2px solid #0066ff; /* Cambia el ancho y el color según tus preferencias */
 }
